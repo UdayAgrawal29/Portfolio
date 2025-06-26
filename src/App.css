@@ -1,0 +1,9 @@
+.main{
+  padding-left: 8rem;
+  padding-right: 10rem;
+  padding-top: 1rem;
+}
+
+* {
+  background-color: rgba(3,0,20,255);
+}

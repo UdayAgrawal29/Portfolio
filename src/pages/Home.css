@@ -1,0 +1,21 @@
+.home_cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home_gif img {
+    padding-top: 5rem;
+    height: 20rem;
+    width: 20rem;
+
+}
+
+.home_left{
+    display: flex;
+    flex-direction: column;
+
+}
+.home_left h1{
+    color: white;
+}

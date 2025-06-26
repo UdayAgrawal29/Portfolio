@@ -1,0 +1,23 @@
+.navbar_container{
+    display:flex;
+    justify-content: space-between;
+
+}
+.navbar_container h3{
+  background: linear-gradient(to right, #a855f7, #6366f1); /* bg-gradient-to-r */
+  -webkit-background-clip: text; /* bg-clip-text (for WebKit browsers) */
+  color: transparent;            /* text-transparent */
+}
+.nav_links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20rem;
+    
+}
+.nav_links a{
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+
+}

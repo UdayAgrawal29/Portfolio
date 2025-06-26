@@ -1,0 +1,13 @@
+.typewriter {
+  font-family: monospace;
+  font-size: 24px;
+  color: white; /* Color of the words */
+}
+
+.cursor {
+  background: linear-gradient(to right, #a855f7, #6366f1); /* same gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ 
+}
+
