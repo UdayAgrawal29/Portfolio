@@ -5,9 +5,10 @@
 }
 
 .home_gif img {
-    padding-top: 5rem;
-    height: 20rem;
-    width: 20rem;
+    padding-top: 4rem;
+    padding-right: 3rem;
+    height: 25rem;
+    width: 25rem;
 
 }
 
@@ -16,6 +17,116 @@
     flex-direction: column;
 
 }
-.home_left h1{
-    color: white;
+
+.tagline {
+  background: linear-gradient(to right, #7f5af0, #6246ea);
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: white;
+  border: none;
+  width: fit-content;
+  box-shadow: 0 0 10px rgba(127, 90, 240, 0.5);
+}
+
+.home_left_button {
+  display: flex;
+  gap: 1rem;
+}
+
+.name{
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.2;
+  display: inline-block;
+  background: linear-gradient(90deg, #ffffff, #d49eff); /* for Frontend */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.glow-heading-container {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.glow-heading-container::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  left: -25%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(164, 66, 255, 0.2), transparent 70%);
+  filter: blur(80px);
+  z-index: -1;
+}
+
+.glow-heading {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.white-text {
+  color: white;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #a446ff, #6a60ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+
+
+.home_left_button button{
+  border: 1px solid #444;
+  padding: 15px 30px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  transition: 0.3s;
+  box-shadow: 0 0 20px 5px rgba(164, 66, 255, 0.4);
+  background-color: rgba(3,0,20,255);
+}
+
+.home_left_button button:hover{
+   box-shadow: 0 0 25px 10px rgba(164, 66, 255, 0.6);
+}
+
+.social-buttons {
+  display: flex;
+}
+.social-buttons button {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1rem; 
+  color: white;
+  font-size: 25px;
+  padding: 15px 20px;
+  border: 1px solid #444; 
+  cursor: pointer;
+  box-shadow: 0 0 20px 5px rgba(164, 66, 255, 0.4);
+}
+
+.social-buttons button:hover {
+   box-shadow: 0 0 25px 10px rgba(164, 66, 255, 0.6);
+}
+
+.social-buttons i {
+  pointer-events: none; 
+}
+
+
+.gradient-text {
+  background: linear-gradient(90deg, #4f46e5, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

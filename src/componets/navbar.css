@@ -4,9 +4,9 @@
 
 }
 .navbar_container h3{
-  background: linear-gradient(to right, #a855f7, #6366f1); /* bg-gradient-to-r */
-  -webkit-background-clip: text; /* bg-clip-text (for WebKit browsers) */
-  color: transparent;            /* text-transparent */
+  background: linear-gradient(to right, #a855f7, #6366f1); 
+  -webkit-background-clip: text; 
+  color: transparent;            
 }
 .nav_links{
     display: flex;
@@ -20,4 +20,16 @@
     color: white;
     text-decoration: none;
 
+}
+.tagline {
+  background: linear-gradient(to right, #7f5af0, #6246ea);
+  padding: 8px 16px;
+  margin-top: 0.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: white;
+  border: none;
+  width: fit-content;
+  box-shadow: 0 0 10px rgba(127, 90, 240, 0.5);
 }

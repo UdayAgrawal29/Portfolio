@@ -1,21 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-
-import Home from './pages/home'
-import Navbar from './componets/navbar'
-
-import "./App.css"
+import { useEffect } from 'react';
+import Navbar from './componets/navbar';
+import Home from './pages/home';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      const dot = document.createElement('div');
+      dot.className = 'cursor-trail';
+      dot.style.left = `${e.clientX}px`;
+      dot.style.top = `${e.clientY}px`;
+      document.body.appendChild(dot);
+
+      setTimeout(() => {
+        dot.remove();
+      }, 600); 
+    };
+
+    document.addEventListener('mousemove', handleMouseMove);
+
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
 
   return (
-    <div class="main">
-      <Navbar/>
-      <Home/>
+    <div className="main">
+      <Navbar />
+      <Home />
     </div>
-  )
+  );
 }
 
 export default App;

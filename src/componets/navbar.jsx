@@ -3,7 +3,7 @@ import "./navbar.css"
 function Navbar(){
     return(
         <div class="navbar_container">
-            <h3>Uday Agrawal</h3>
+            <button className="tagline">🚀 Ready to Innovate</button>
             <div class="nav_links">
                 <a href="">Home</a>
                 <a href="">About</a>
