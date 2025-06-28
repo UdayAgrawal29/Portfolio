@@ -1,18 +1,15 @@
 import "./Home.css"
-import Typewriter from "../componets/Typewriter";
+import Typewriter from "../components/Home_componets/Typewriter";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function Home(){
     return(
         <div class="home_cont">          
             <div class="home_left">
-              <div className="glow-heading-container">
-                <h1 className="glow-heading">
+                <h1>
                   <span className="white-text">Uday</span><br />
-                  <span className="gradient-text">Agrawal</span>
+                  <span className="gradient">Agrawal</span>
                 </h1>
-              </div>
-
 
                 
                 <Typewriter
@@ -36,15 +33,16 @@ function Home(){
                 <br/>
                 <br/>
                  <div className="social-buttons">
-                  <button onClick={() => window.open('https://github.com/yourusername', '_blank')}>
+                  <button onClick={() => window.open('https://github.com/UdayAgrawal29', '_blank')}>
                     <i className="fab fa-github"></i>
                   </button>
-                  <button onClick={() => window.open('https://linkedin.com/in/yourprofile', '_blank')}>
+                  <button onClick={() => window.open('https://www.linkedin.com/in/uday-agrawal29/', '_blank')}>
                     <i className="fab fa-linkedin"></i>
                   </button>
-                  <button onClick={() => window.open('https://instagram.com/yourhandle', '_blank')}>
-                    <i className="fab fa-instagram"></i>
+                  <button onClick={() => window.open('https://leetcode.com/u/Uday2904', '_blank')}>
+                    <i className="fas fa-code"></i>
                   </button>
+
                 </div>
               </div>
 

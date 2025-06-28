@@ -1,21 +1,32 @@
+html,body {
+  margin: 0;
+  padding: 0;
+}
 .main{
   padding-left: 8rem;
   padding-right: 10rem;
   padding-top: 1rem;
+   background-color: rgba(3,0,20,255);
 }
 
 
-/* .glowing-cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  pointer-events: none;
+.cursor-trail {
+  position: absolute;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  background: rgba(164, 66, 255, 0.3); 
-  box-shadow: 0 0 20px 8px rgba(164, 66, 255, 0.5);
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-  transition: background 0.2s ease, transform 0.05s ease;
-} */
+  background-color: rgba(180, 140, 255, 0.7); 
+  pointer-events: none;
+  animation: dot-animation 0.6s ease-out;
+}
+
+@keyframes dot-animation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}

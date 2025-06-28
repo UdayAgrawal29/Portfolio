@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 5rem;
 }
 
 .home_gif img {
@@ -35,52 +36,19 @@
   gap: 1rem;
 }
 
-.name{
-  font-size: 4rem;
-  font-weight: 800;
-  line-height: 1.2;
-  display: inline-block;
-  background: linear-gradient(90deg, #ffffff, #d49eff); /* for Frontend */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: relative;
-}
-
-.glow-heading-container {
-  position: relative;
-  display: inline-block;
-  z-index: 1;
-}
-
-.glow-heading-container::before {
-  content: '';
-  position: absolute;
-  top: -40%;
-  left: -25%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(164, 66, 255, 0.2), transparent 70%);
-  filter: blur(80px);
-  z-index: -1;
-}
-
-.glow-heading {
-  font-size: 4rem;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
 .white-text {
   color: white;
+  font-size: 4rem;
 }
 
-.gradient-text {
+.gradient {
+  font-size: 4rem;
   background: linear-gradient(90deg, #a446ff, #6a60ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: inline-block;
-}
 
+
+}
 
 
 .home_left_button button{
@@ -122,11 +90,4 @@
 
 .social-buttons i {
   pointer-events: none; 
-}
-
-
-.gradient-text {
-  background: linear-gradient(90deg, #4f46e5, #9333ea);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
