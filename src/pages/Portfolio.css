@@ -1,0 +1,47 @@
+.portfolio-container {
+    text-align: center;
+    padding: 40px;
+    color: white;
+    margin-top: 2rem;
+}
+
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    border: 2px solid gray;
+    height: 5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px 5px rgba(164, 66, 255, 0.4);   
+    
+}
+
+.tab-button {
+     display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* spacing between icon and text */
+    background: transparent;
+    border: 2px solid #444;
+    color: white;
+    padding: 15px 30px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+.tab-button.active {
+  background: #6939ee;
+  color: white;
+}
+
+.tab-content {
+  margin-top: 40px;
+}
+
+.tab-section {
+  padding: 20px;
+}

@@ -4,8 +4,8 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function Home(){
     return(
-        <div class="home_cont">          
-            <div class="home_left">
+        <div className="home_cont">          
+            <div className="home_left">
                 <h1>
                   <span className="white-text">Uday</span><br />
                   <span className="gradient">Agrawal</span>
@@ -46,7 +46,7 @@ function Home(){
                 </div>
               </div>
 
-            <div class="home_gif">
+            <div className="home_gif">
                 <img src="src\images\comp.gif"/>
             </div>
         

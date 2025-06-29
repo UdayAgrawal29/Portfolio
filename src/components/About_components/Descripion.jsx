@@ -30,7 +30,10 @@ function Descrip(){
 
 
             </div>
-            
+            <div className="desp_buttons">
+                <button className="down_btn">Download CV</button>
+                {/* <button className="proj_btn">Projects</button> */}
+            </div>
         
         </>
         

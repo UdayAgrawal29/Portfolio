@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import Descrip from "../components/About_components/descripion";
+import Div_Tab from "../components/About_components/Div_Tab";
 import AOS from "aos";
 import "aos/dist/aos.css"; // import AOS styles
-import './About.css';
+
 
 function About() {
   useEffect(() => {
@@ -26,16 +27,8 @@ function About() {
         About me
       </h1>
 
-
-      <h2
-        style={{ color: 'gray', textAlign: 'center' }}
-      >
-        Transforming ideas into digital experiences
-      </h2>
-
-
-
       <Descrip/>
+      {/* <Div_Tab/> */}
         
     </div>
   );
