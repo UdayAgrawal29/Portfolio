@@ -1,19 +1,20 @@
 .techStackContainer{
     padding: 2rem;
-    text-align: center ,
+    text-align: center;
+    
 
 }
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(3, minmax(120px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
 
 }
 
 .card {
   display: flex;
-  width: 15rem;
+  width: 10rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -21,9 +22,12 @@
   border-radius: 8px;
   background-color: #1c1c28;
   transition: transform 0.2s;
-  box-shadow: 0 0 20px 5px rgba(164, 66, 255, 0.38);
+  box-shadow: 0 0 20px 5px rgba(164, 66, 255, 0.38); 
 }
-
+.icon:hover{
+    filter: drop-shadow(0 0 20px #7d75caac);
+     transform: scale(1.05);  
+}
 .label {
   margin-top: 0.5rem;
   font-weight: bold;

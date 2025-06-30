@@ -3,6 +3,7 @@ import ProjectTab from "../components/Portfolio_componets/ProjectTab";
 import CertificateTab from "../components/Portfolio_componets/CertificateTab";
 import TechStackTab from "../components/Portfolio_componets/TechStackTab";
 import "./Portfolio.css"; 
+
 import { Award } from "lucide-react";
 import { Code2 } from "lucide-react";
 import {Cpu } from "lucide-react"
@@ -43,7 +44,7 @@ function Portfolio() {
 
       <div className="tab-content">
         {/* {activeTab === "projects" && <ProjectTab />} */}
-        {/* {activeTab === "certificates" && <CertificateTab />} */}
+        {activeTab === "certificates" && <CertificateTab />}
         {activeTab === "tech" && <TechStackTab />}
       </div>
     </div>

@@ -2,15 +2,12 @@ import React from "react";
 import "./ProjectTab.css"; 
 import { ExternalLink } from "lucide-react";
 
- 
-
-
 const projectList = [
   {
     title: "Aritmatika Solver",
     description: "Program ini dirancang untuk mempermudah pengguna dalam menyelesaikan soal-soal Aritmatika secara otomatis...",
     image: "/assets/arithmetic.png",
-   
+    demoLink: "#",
     detailsLink: "#"
   },
   {
