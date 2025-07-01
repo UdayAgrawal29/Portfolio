@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import Glow_Back from './components/glow_background';
 import Navbar from './components/navbar';
 import Home from './pages/home';
 import About from './pages/About';
@@ -29,12 +28,19 @@ function App() {
   }, []);
 
   return (
-    <div className="main">
-      <Navbar />
-      <Home />
-      <About />
-      <Portfolio/>
-    </div>
+ <div className="main">
+  <Navbar />
+  <section id="home">
+    <Home />
+  </section>
+  <section id="about">
+    <About />
+  </section>
+  <section id="portfolio">
+    <Portfolio />
+  </section>
+</div>
+
   );
 }
 

@@ -27,8 +27,12 @@ function Home(){
                 <br/>
 
                 <div className="home_left_button">
+                    <a href="#portfolio">
                     <button>Projects ↗</button>
+                  </a>
+                  <a href="#contact">
                     <button>Contact ✉️</button>
+                  </a>
                 </div>
                 <br/>
                 <br/>

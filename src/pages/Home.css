@@ -34,6 +34,7 @@
 .home_left_button {
   display: flex;
   gap: 1rem;
+  
 }
 
 .white-text {
@@ -52,6 +53,7 @@
 
 
 .home_left_button button{
+  cursor: pointer;
   border: 1px solid #444;
   padding: 15px 30px;
   border-radius: 8px;

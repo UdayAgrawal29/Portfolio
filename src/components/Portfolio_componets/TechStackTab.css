@@ -9,13 +9,14 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
-
-}
-
-.card {
-  display: flex;
-  width: 10rem;
-  flex-direction: column;
+    
+  }
+  
+  .card {
+    display: flex;
+    width: 10rem;
+    flex-direction: column;
+    cursor: pointer;
   align-items: center;
   justify-content: center;
   padding: 1rem;

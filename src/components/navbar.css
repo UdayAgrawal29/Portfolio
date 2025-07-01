@@ -28,9 +28,20 @@
     font-size: 1.3rem;
     color: white;
     text-decoration: none;
+    border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
 
+.nav_links a.active {
+  border-bottom: 5px solid #7f5af0; /* or your brand color */
+  border-radius: 3px;
+   color: white
 }
 .tagline {
+  display: flex;
+  align-items: center; /* vertically center image and text */
+  gap: 2px; /* space between image and text */
+
   background: linear-gradient(to right, #7f5af0, #6246ea);
   padding: 8px 16px;
   margin-top: 0.5rem;
@@ -41,4 +52,9 @@
   border: none;
   width: fit-content;
   box-shadow: 0 0 10px rgba(127, 90, 240, 0.5);
+}
+
+.tagline img {
+  height: 1.8rem; /* match text size or adjust as needed */
+  vertical-align: middle;
 }

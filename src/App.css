@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 /* * {
   outline: 1px solid red;
@@ -12,7 +12,7 @@ html, body {
   padding-left: 8rem;
   padding-right: 10rem;
   padding-top: 1rem;
-  background-color: rgba(3, 0, 20, 1);
+  background-color: #030014;
 }
 .cursor-trail {
   position: fixed;

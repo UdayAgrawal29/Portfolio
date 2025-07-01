@@ -70,18 +70,22 @@
   position: relative;
   max-width: 90%;
   max-height: 90%;
+  
 }
 
 .modal-content img {
-  width: 100%;
+  width: 80%;
   height: auto;
   border-radius: 8px;
+  max-width: 90vw;  /* Make sure it doesn't exceed the viewport width */
+  max-height: 90vh; /* Make sure it doesn't exceed the viewport height */
+  object-fit: contain; /* Ensures the image maintains aspect ratio */
 }
 
 .close-btn {
   position: absolute;
-  top: -15px;
-  right: -15px;
+  top: -10px;
+  right: 75px;
   background-color: rgb(63, 61, 61);
   color: white;
   border: none;

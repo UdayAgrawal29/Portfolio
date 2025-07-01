@@ -31,7 +31,9 @@ function Descrip(){
 
             </div>
             <div className="desp_buttons">
-                <button className="down_btn">Download CV</button>
+                <a href="src\UDAY AGRAWAL RESUME.pdf" download>
+                    <button className="down_btn">Download CV</button>
+                </a>
                 {/* <button className="proj_btn">Projects</button> */}
             </div>
         

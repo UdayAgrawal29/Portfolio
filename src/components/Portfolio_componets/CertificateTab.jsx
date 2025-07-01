@@ -1,32 +1,32 @@
   import React, { useState } from 'react';
   import './CertificateTab.css';
 
-  const certificates = [
-    {
-      title: 'Machine Learning',
-      image: 'src/images/certificates/ML.jpg',
-    },
-    // {
-    //   title: 'Web Programming',
-    //   image: 'src/images/certificates/ML.jpg',
-      
-    // }
-    {
-      title: 'C Training',
-      image: 'src/images/certificates/C.jpg',
-      
-    },
-    {
-      title: 'C++ Training',
-      image: 'src/images/certificates/Cpp.jpg',
-      
-    },
-    {
-      title: 'Python Training',
-      image: 'src/images/certificates/Python.jpg',
-      
-    },
-  ];
+    const certificates = [
+      {
+        title: 'Machine Learning',
+        image: 'src/images/certificates/ML.jpg',
+      },
+      // {
+      //   title: 'Web Programming',
+      //   image: 'src/images/certificates/ML.jpg',
+        
+      // },
+      {
+        title: 'C Training',
+        image: 'src/images/certificates/C.jpg',
+        
+      },
+      {
+        title: 'C++ Training',
+        image: 'src/images/certificates/Cpp.jpg',
+        
+      },
+      {
+        title: 'Python Training',
+        image: 'src/images/certificates/Python.jpg',
+        
+      },
+    ];
 
   function CertificateTab() {
     const [selected, setSelected] = useState(null);
