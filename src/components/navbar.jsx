@@ -9,14 +9,14 @@ function Navbar() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
 
-      const sections = ["home", "about", "portfolio"];
+      const sections = ["home", "about", "portfolio", "contact"];
       let currentSection = "home";
 
       for (let section of sections) {
         const element = document.getElementById(section);
         if (element) {
           const rect = element.getBoundingClientRect();
-          if (rect.top <= 100 && rect.bottom >= 100) {
+          if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2){
             currentSection = section;
             break;
           }
@@ -27,13 +27,13 @@ function Navbar() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Call on mount
+    handleScroll(); 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <div className={`navbar_container ${scrolled ? "scrolled" : ""}`}>
-      <button className="tagline"><img src='src/images/star-removebg-preview.png'/> Ready to Innovate</button>
+      <button className="tagline"><img src='public/images/star-removebg-preview.png'/> Ready to Innovate</button>
       <div className="nav_links">
         <a
           href="#home"
@@ -53,7 +53,13 @@ function Navbar() {
         >
           Portfolio
         </a>
-        <a href="#">Contact</a>
+        <a
+          href="#contact"
+          className={activeSection === "contact" ? "active" : ""}
+        >
+          Contact
+        </a>
+      
       </div>
     </div>
   );

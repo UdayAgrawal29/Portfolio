@@ -1,0 +1,112 @@
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.form-section {
+  flex: 3;
+  min-width: 60%;
+  background: #1c1c24;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(138, 84, 255, 0.2);
+}
+
+.connect-section {
+  flex: 1;
+  min-width: 250px;
+  height: 15rem;
+  background: #1c1c24;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(138, 84, 255, 0.2);
+}
+
+.contact-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #a86efc;
+}
+
+.contact-subtext {
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  color: #cfcfcf;
+}
+
+.contact-form .input-group {
+  display: flex;
+  align-items: center;
+  background: #2a2a33;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+}
+
+.input-group .icon {
+  margin-right: 0.6rem;
+  color: #aaa;
+}
+
+.input-group input,
+.input-group textarea {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1rem;
+  flex: 1;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.send-btn {
+  width: 100%;
+  background: linear-gradient(to right, #8a4dff, #c14fff);
+  padding: 0.8rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
+
+.send-btn:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
+.connect-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.connect-box {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #2b2b33;
+  padding: 0.8rem 1rem;
+  border-radius: 0.6rem;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.connect-box:hover {
+  background: #3b3b44;
+}
+
+.linkedin { color: #0a66c2; }
+.github   { color: #fff; }
+.email    { color: #ffb400; }

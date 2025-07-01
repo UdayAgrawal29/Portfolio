@@ -4,7 +4,7 @@
     const certificates = [
       {
         title: 'Machine Learning',
-        image: 'src/images/certificates/ML.jpg',
+        image: '/images/certificates/ML.jpg',
       },
       // {
       //   title: 'Web Programming',
@@ -13,17 +13,17 @@
       // },
       {
         title: 'C Training',
-        image: 'src/images/certificates/C.jpg',
-        
+        image: '/images/certificates/C.jpg',
+       
       },
       {
         title: 'C++ Training',
-        image: 'src/images/certificates/Cpp.jpg',
+        image: '/images/certificates/Cpp.jpg',
         
       },
       {
         title: 'Python Training',
-        image: 'src/images/certificates/Python.jpg',
+        image: '/images/certificates/Python.jpg',
         
       },
     ];

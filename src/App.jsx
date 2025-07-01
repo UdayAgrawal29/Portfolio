@@ -1,8 +1,9 @@
 import { useEffect } from 'react';
 import Navbar from './components/navbar';
-import Home from './pages/home';
+import Home from './pages/Home';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact';
 import './App.css';
 
 function App() {
@@ -14,10 +15,9 @@ function App() {
       dot.style.top = `${e.clientY}px`;
       document.body.appendChild(dot);
 
-      // Remove the dot after animation ends
       setTimeout(() => {
         dot.remove();
-      }, 600); // same duration as animation
+      }, 600); 
     };
 
     document.addEventListener('mousemove', handleMouseMove);
@@ -38,6 +38,9 @@ function App() {
   </section>
   <section id="portfolio">
     <Portfolio />
+  </section>
+  <section id="contact">
+    <Contact />
   </section>
 </div>
 

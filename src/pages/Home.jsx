@@ -14,9 +14,9 @@ function Home(){
                 
                 <Typewriter
                   words={["Web Developer", "Data Analyst", "AI/ML Enthusiast"]}
-                  typeSpeed={100}        // Typing speed per letter (ms)
-                  deleteSpeed={100}     // Deletion speed per letter (ms) — 1 sec
-                  pause={1000}           // Pause after typing a word (ms)
+                  typeSpeed={100}        
+                  deleteSpeed={100}     
+                  pause={1000}          
                 />
                 <br/>
 
@@ -51,7 +51,7 @@ function Home(){
               </div>
 
             <div className="home_gif">
-                <img src="src\images\comp.gif"/>
+                <img src="public\images\comp.gif"/>
             </div>
         
         </div>

@@ -1,62 +1,88 @@
-import React from "react";
-import "./ProjectTab.css"; 
+import React, { useState } from "react";
+import "./ProjectTab.css";
 import { ExternalLink } from "lucide-react";
+import ProjectPopup from "./ProjectPopup";
+
 
 const projectList = [
   {
-    title: "Aritmatika Solver",
-    description: "Program ini dirancang untuk mempermudah pengguna dalam menyelesaikan soal-soal Aritmatika secara otomatis...",
-    image: "/assets/arithmetic.png",
-    demoLink: "#",
-    detailsLink: "#"
+    title: "DevaOCR",
+    description: "AI-powered system for recognizing handwritten Devanagari script.",
+    description1:`
+                  DevaOCR is a deep learning-based system built using Microsoft's TrOCR model 
+                  to recognize handwritten Hindi text. It converts scanned or photographed manuscripts 
+                  into editable digital text. A custom dataset of 90,000+ Hindi characters and synthetic 
+                  manuscript-style images was used to fine-tune the model for high accuracy.
+                  `,
+    image: "public/images/Project/Projects/DevaOCR.png",
+    demoLink: "https://huggingface.co/spaces/UdayAgrawal29/handwritten-devanagari-text-recognition",
+    detailsLink: "#",
+    technologies: ["Python", "TrOCR", "Hugging Face", "PIL", "Deep Learning"],
+    features: [
+      "Hindi handwritten text recognition",
+      "Character and word-level predictions",
+      "Custom dataset & synthetic data",
+      "TrOCR fine-tuning for Hindi"
+    ],
   },
   {
-    title: "AutoChat-Discord",
-    description: "AutoChat adalah solusi otomatisasi untuk mengirim pesan ke saluran Discord secara terjadwal...",
-    image: "/assets/discord.png",
+    title: "VISTA",
+    description: "AI-driven multilingual system for museums (SIH Project).",
+    description1: 
+                  `VISTA is an AI-enhanced multilingual system developed for the Smart India Hackathon.
+                  It is designed to streamline museum operations and enrich visitor experience using smart multilingual
+                  interfaces, digital kiosks, and AI-backed content delivery. It bridges the language gap and makes cultural
+                  content more accessible and interactive for all visitors.`,
+
+    image: "public/images/Project/Projects/VISTA.png", 
     demoLink: "#",
-    detailsLink: "#"
+    detailsLink: "#",
+    technologies: ["React", "Flask", "NLP", "Translation APIs", "AI/ML"],
+    features: [
+      "Multilingual content delivery",
+      "AI-based visitor interaction",
+      "Museum management support",
+      "Smart kiosk integration"
+    ],
   },
   {
-    title: "Buku Catatan",
-    description: "Buku Catatan adalah website yang memungkinkan pengguna membuat, menyimpan, dan mengelola catatan...",
-    image: "/assets/notebook.png",
+    title: "TradeInsight",
+    description: "Web platform providing trading patterns and indicators.",
+    description1: 
+
+                `TradeInsight is a financial insights platform that analyzes stock data 
+                to deliver useful trading patterns and indicators. It helps users make informed 
+                decisions through dynamic chart visualizations, technical signal detection, and 
+                real-time trend identification. The tool is especially useful for retail traders
+                and beginner investors.`,
+
+    image: "public/images/Project/Projects/TradeInsight.png",
     demoLink: "#",
-    detailsLink: "#"
-  },
-  {
-    title: "Growtopia-Calculator",
-    description: "Growtopia Surgery Shop Calculator membantu pemain Growtopia menghitung keuntungan dari penjualan tools...",
-    image: "/assets/growtopia.png",
-    demoLink: "#",
-    detailsLink: "#"
-  },
-  {
-    title: "IT Support Bekasi",
-    description: "Website IT Support Bekasi adalah proyek yang saya buat atas permintaan guru di sekolah...",
-    image: "/assets/itsupport.png",
-    demoLink: "#",
-    detailsLink: "#"
-  },
-  {
-    title: "Oprec 24",
-    description: "Sebuah project pembuatan website organisasi yang mencakup deskripsi, galeri foto, dan profil anggota...",
-    image: "/assets/oprec.png",
-    demoLink: "#",
-    detailsLink: "#"
+    detailsLink: "#",
+    technologies: ["JavaScript", "React", "QuickChart.io", "Finnhub API", "WebSocket"],
+    features: [
+      "Live stock market data",
+      "Real-time graph rendering",
+      "Trading patterns & technical indicators",
+      "Clean, responsive UI"
+    ],
   },
 ];
 
+
 const ProjectTab = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+
   return (
-    <div className="project-grid">
-      {projectList.map((proj, index) => (
-        <div className="project-card" key={index}>
-          <img src={proj.image} alt={proj.title} className="project-image" />
-          <h3 className="project-title">{proj.title}</h3>
-          <p className="project-description">{proj.description}</p>
-          
-            <div className="project-links">
+    <>
+      <div className="proj_grid">
+        {projectList.map((proj, index) => (
+          <div className="proj_card" key={index}>
+            <img src={proj.image} alt={proj.title} className="proj_image" />
+            <h3 className="proj_title">{proj.title}</h3>
+            <p className="proj_descrip">{proj.description}</p>
+
+            <div className="proj_links">
               <div className="demo-placeholder">
                 {proj.demoLink ? (
                   <a
@@ -65,22 +91,27 @@ const ProjectTab = () => {
                     rel="noreferrer"
                     className="demo-link"
                   >
-                    Live Demo
-                    <ExternalLink size={18} color="#60a5fa" />
+                    Link <ExternalLink size={18} color="#60a5fa" />
                   </a>
                 ) : (
-                  <div style={{ width: "80px" }}></div> // Keeps spacing
+                  <div style={{ width: "80px" }}></div>
                 )}
               </div>
 
-              <a href={proj.detailsLink} className="details-button">
+              <button className="details-button" onClick={() => setSelectedProject(proj)}>
                 Details →
-              </a>
+              </button>
             </div>
+          </div>
+        ))}
+      </div>
+      
+      {selectedProject && (
+        <ProjectPopup project={selectedProject} onClose={() => setSelectedProject(null)} />
+      )}
 
-        </div>
-      ))}
-    </div>
+
+    </>
   );
 };
 

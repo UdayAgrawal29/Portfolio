@@ -43,7 +43,7 @@ function Portfolio() {
       </div>
 
       <div className="tab-content">
-        {/* {activeTab === "projects" && <ProjectTab />} */}
+        {activeTab === "projects" && <ProjectTab />}
         {activeTab === "certificates" && <CertificateTab />}
         {activeTab === "tech" && <TechStackTab />}
       </div>

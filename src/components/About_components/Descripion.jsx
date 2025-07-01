@@ -25,7 +25,7 @@ function Descrip(){
 
 
                 <div>
-                    <img className="my_img" src="src/images/pic_new.jpg"/>
+                    <img className="my_img" src="public\images\pic_new.jpg"/>
                 </div>
 
 
@@ -34,7 +34,6 @@ function Descrip(){
                 <a href="src\UDAY AGRAWAL RESUME.pdf" download>
                     <button className="down_btn">Download CV</button>
                 </a>
-                {/* <button className="proj_btn">Projects</button> */}
             </div>
         
         </>
