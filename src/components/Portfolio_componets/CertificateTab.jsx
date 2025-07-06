@@ -6,11 +6,11 @@
         title: 'Machine Learning',
         image: '/images/certificates/ML.jpg',
       },
-      // {
-      //   title: 'Web Programming',
-      //   image: 'src/images/certificates/ML.jpg',
+      {
+        title: 'Web Programming',
+        image: '/images/certificates/web dev.jpg',
         
-      // },
+      },
       {
         title: 'C Training',
         image: '/images/certificates/C.jpg',

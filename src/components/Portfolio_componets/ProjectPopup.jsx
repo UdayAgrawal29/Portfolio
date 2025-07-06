@@ -13,23 +13,7 @@ const ProjectPopup = ({ project, onClose }) => {
           <h2 className="popup-title">{project.title}</h2>
           <p className="popup-desc">{project.description1}</p>
 
-          {/* <div className="popup-stats">
-            <div className="stat-box">🧩 {project.technologies?.length || 0} Total Teknologi</div>
-            <div className="stat-box">🚀 {project.features?.length || 0} Fitur Utama</div>
-          </div> */}
-
-          {/* <div className="popup-buttons">
-            {project.demoLink && (
-              <a href={project.demoLink} className="popup-btn" target="_blank" rel="noreferrer">
-                Live Demo
-              </a>
-            )}
-            {project.githubLink && (
-              <a href={project.githubLink} className="popup-btn" target="_blank" rel="noreferrer">
-                GitHub
-              </a>
-            )}
-          </div> */}
+         
 
           <h4>🛠 Technologies Used</h4>
           <div className="tech-badges">
@@ -44,11 +28,11 @@ const ProjectPopup = ({ project, onClose }) => {
 
           <div className="popup-features">
             <h4>🌟 Key Features</h4>
-            <div>
+            <ul>
               {project.features?.map((f, i) => (
                 <li key={i}>{f}</li>
               ))}
-            </div>
+            </ul>
           </div>
         </div>
       </div>

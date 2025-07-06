@@ -25,7 +25,7 @@ function Descrip(){
 
 
                 <div>
-                    <img className="my_img" src="public\images\pic_new.jpg"/>
+                    <img className="my_img" src="images\pic_new.jpg"/>
                 </div>
 
 

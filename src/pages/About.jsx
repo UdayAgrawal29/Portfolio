@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Descrip from "../components/About_components/descripion";
+import Descrip from "../components/About_components/Descripion";
 import Div_Tab from "../components/About_components/Div_Tab";
 import AOS from "aos";
 import "aos/dist/aos.css"; // import AOS styles

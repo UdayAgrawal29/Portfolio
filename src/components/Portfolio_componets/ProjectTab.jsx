@@ -14,7 +14,7 @@ const projectList = [
                   into editable digital text. A custom dataset of 90,000+ Hindi characters and synthetic 
                   manuscript-style images was used to fine-tune the model for high accuracy.
                   `,
-    image: "public/images/Project/Projects/DevaOCR.png",
+    image: "images/Project/Projects/DevaOCR.png",
     demoLink: "https://huggingface.co/spaces/UdayAgrawal29/handwritten-devanagari-text-recognition",
     detailsLink: "#",
     technologies: ["Python", "TrOCR", "Hugging Face", "PIL", "Deep Learning"],
@@ -34,7 +34,7 @@ const projectList = [
                   interfaces, digital kiosks, and AI-backed content delivery. It bridges the language gap and makes cultural
                   content more accessible and interactive for all visitors.`,
 
-    image: "public/images/Project/Projects/VISTA.png", 
+    image: "images/Project/Projects/VISTA.png", 
     demoLink: "#",
     detailsLink: "#",
     technologies: ["React", "Flask", "NLP", "Translation APIs", "AI/ML"],
@@ -56,7 +56,7 @@ const projectList = [
                 real-time trend identification. The tool is especially useful for retail traders
                 and beginner investors.`,
 
-    image: "public/images/Project/Projects/TradeInsight.png",
+    image: "images/Project/Projects/TradeInsight.png",
     demoLink: "#",
     detailsLink: "#",
     technologies: ["JavaScript", "React", "QuickChart.io", "Finnhub API", "WebSocket"],

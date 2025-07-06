@@ -28,9 +28,9 @@ import {
 const stack = [
     // Programming Languages
 
-  { name: "C++", icon: <img src="public\images\TechStack\cplusplus.svg" alt="C++" width={90} height={90} />},
-  { name: "Java", icon: <img src="public\images\TechStack\java.svg" alt="Java" width={90} height={90} />},
-  { name: "Python", icon: <img src="public\images\TechStack\python.svg" alt="Python" width={90} height={90} />},
+  { name: "C++", icon: <img src="images\TechStack\cplusplus.svg" alt="C++" width={90} height={90} />},
+  { name: "Java", icon: <img src="images\TechStack\java.svg" alt="Java" width={90} height={90} />},
+  { name: "Python", icon: <img src="images\TechStack\python.svg" alt="Python" width={90} height={90} />},
 
   // Frontend
 
@@ -46,7 +46,7 @@ const stack = [
   // Backend
   { name: "Node JS", icon: <FaNodeJs color="#68a063" size={90} /> },
   { name: "Express", icon: <SiExpress size={90} /> },
-  {name: "Django", icon: <img src="public\images\TechStack\django.svg" alt="Django" width={90} height={90} />},
+  {name: "Django", icon: <img src="images\TechStack\django.svg" alt="Django" width={90} height={90} />},
 
 
   // Databases

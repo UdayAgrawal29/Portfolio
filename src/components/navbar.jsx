@@ -33,7 +33,7 @@ function Navbar() {
 
   return (
     <div className={`navbar_container ${scrolled ? "scrolled" : ""}`}>
-      <button className="tagline"><img src='public/images/star-removebg-preview.png'/> Ready to Innovate</button>
+      <button className="tagline"><img src='images/star-removebg-preview.png'/> Ready to Innovate</button>
       <div className="nav_links">
         <a
           href="#home"
