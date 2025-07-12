@@ -4,26 +4,26 @@
     const certificates = [
       {
         title: 'Machine Learning',
-        image: '/images/certificates/ML.jpg',
+        image: 'images/certificates/ML.jpg',
       },
       {
         title: 'Web Programming',
-        image: '/images/certificates/web dev.jpg',
+        image: 'images/certificates/web dev.jpg',
         
       },
       {
         title: 'C Training',
-        image: '/images/certificates/C.jpg',
+        image: 'images/certificates/C.jpg',
        
       },
       {
         title: 'C++ Training',
-        image: '/images/certificates/Cpp.jpg',
+        image: 'images/certificates/Cpp.jpg',
         
       },
       {
         title: 'Python Training',
-        image: '/images/certificates/Python.jpg',
+        image: 'images/certificates/Python.jpg',
         
       },
     ];

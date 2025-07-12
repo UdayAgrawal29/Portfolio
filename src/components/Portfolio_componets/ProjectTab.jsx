@@ -11,12 +11,11 @@ const projectList = [
     description1:`
                   DevaOCR is a deep learning-based system built using Microsoft's TrOCR model 
                   to recognize handwritten Hindi text. It converts scanned or photographed manuscripts 
-                  into editable digital text. A custom dataset of 90,000+ Hindi characters and synthetic 
+                  into editable digital text. A dataset of 90,000+ Hindi characters and synthetic 
                   manuscript-style images was used to fine-tune the model for high accuracy.
                   `,
     image: "images/Project/Projects/DevaOCR.png",
     demoLink: "https://huggingface.co/spaces/UdayAgrawal29/handwritten-devanagari-text-recognition",
-    detailsLink: "#",
     technologies: ["Python", "TrOCR", "Hugging Face", "PIL", "Deep Learning"],
     features: [
       "Hindi handwritten text recognition",
@@ -27,7 +26,7 @@ const projectList = [
   },
   {
     title: "VISTA",
-    description: "AI-driven multilingual system for museums (SIH Project).",
+    description: "AI-driven multilingual system for enhancing museum experiences",
     description1: 
                   `VISTA is an AI-enhanced multilingual system developed for the Smart India Hackathon.
                   It is designed to streamline museum operations and enrich visitor experience using smart multilingual
@@ -36,8 +35,7 @@ const projectList = [
 
     image: "images/Project/Projects/VISTA.png", 
     demoLink: "#",
-    detailsLink: "#",
-    technologies: ["React", "Flask", "NLP", "Translation APIs", "AI/ML"],
+    technologies: ["HTMLt", "CSS", "JS", "DJANGO"],
     features: [
       "Multilingual content delivery",
       "AI-based visitor interaction",
@@ -58,7 +56,6 @@ const projectList = [
 
     image: "images/Project/Projects/TradeInsight.png",
     demoLink: "#",
-    detailsLink: "#",
     technologies: ["JavaScript", "React", "QuickChart.io", "Finnhub API", "WebSocket"],
     features: [
       "Live stock market data",

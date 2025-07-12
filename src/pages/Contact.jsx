@@ -1,57 +1,82 @@
 import React from 'react';
 import './contact.css';
-
+import { FaPhone, FaMapMarkerAlt, FaRegEnvelope } from 'react-icons/fa';
 const Contact = () => {
   return (
-    <div className="contact-container">
-      
-      <div className="form-section">
-        <h2 className="contact-title">Contact </h2>
-        <p className="contact-subtext">
-          What do you want to discuss? Send me a message and let's talk.
-        </p>
 
-        <form className="contact-form" action="https://formsubmit.co/udayagarwal29@gmail.com" method="POST">
-          <div className="input-group">
-            <input type="text" placeholder="Name" name="name" required />
-          </div>
+    <div className='contact_cont'>
+      <div className='form_side'>
+          <h2 className="con_title">Send me a message </h2>
+          <p className="con_text">
+            Fill out the form below and I'll get back to you as soon as possible
+          </p>
 
-          <div className="input-group">
-            <input type="email" placeholder="Email" name="email"  required />
-          </div>
+          <form className="contact-form" action="https://formsubmit.co/udayagarwal29@gmail.com" method="POST">
+            <div className="input-grp">
+              <input type="text" placeholder="Name" name="name" required />
+            </div>
 
-          <div className="input-group">
-            <textarea placeholder="Your message" name="message" required />
-          </div>
+            <div className="input-grp">
+              <input type="email" placeholder="Email" name="email"  required />
+            </div>
 
-          <button type="submit" className="send-btn">
-            📨 Send Message
-          </button>
-        </form>
+            <div className="input-grp">
+              <textarea placeholder="Your message" name="message" required />
+            </div>
+
+            <button type="submit" className="send-btn">
+              📨 Send Message
+            </button>
+            <input type="hidden" name="_captcha" value="false"></input>
+            <input type="hidden" name="_next" value="https://udayagrawal29.github.io/Portfolio/"></input>
+            {/* <input type="hidden" name="_autoresponse" value="Thanks for contacting me! I’ve received your message and will respond as soon as possible. ">  </input> */}
+          </form>
+        
       </div>
+      
+      <div className='detail_side'>
+          <div className="contanct_info">
+          <h3>Contact Information</h3>
+          <div className="contact_divs">
 
-      <div className="connect-section">
-        <h3>Connect With Me</h3>
-        <div className="connect-links">
+            <div className="connect-box email">
+              <FaRegEnvelope size={20} color="#b388f4" /> 
+              udayagarwal29@gmail.com
+            </div>
 
-          <a href="https://www.linkedin.com/in/uday-agrawal29/" target="_blank" rel="noreferrer" className="connect-box linkedin">
-            <img src="images/Connect/linkedin.svg" alt="LinkedIn" width="20" />
-            LinkedIn
-          </a>
+           
+            <div className="connect-box phone">
+              <FaPhone size={20} color="#00FF88" /> 
+              (+91) 7205753779
+            </div>
 
-
-          <a href="https://github.com/UdayAgrawal29" target="_blank" rel="noreferrer" className="connect-box github">
-            <img src="images\Connect\github-icon-1-logo.svg" width="20" alt="GitHub" />
-            GitHub
-          </a>
-
-
-          <a href="mailto:udayagarwal29@gmail.com" className="connect-box email">
-            <img src="images\Connect\gmail-icon-logo.svg" width="20" alt="Email" />
-            Email
-          </a>
-
+           
+            <div className="connect-box location">
+              <FaMapMarkerAlt size={20} color="#00ccff" /> 
+              Chennai, India
+            </div>
+          </div>
         </div>
+
+
+          <div className='social_media'>
+            <h3>Follow Me</h3>
+            <div className="connect-links">
+
+              <a href="https://www.linkedin.com/in/uday-agrawal29/" target="_blank"  className="connect-box linkedin">
+                <img src="images/Connect/linkedin.svg" alt="LinkedIn" width="20" />
+                LinkedIn
+              </a>
+
+
+              <a href="https://github.com/UdayAgrawal29" target="_blank"  className="connect-box github">
+                <img src="images\Connect\github-icon-1-logo.svg" width="20" alt="GitHub" />
+                GitHub
+              </a>
+
+            </div>
+          </div>
+
       </div>
     </div>
   );

@@ -50,7 +50,8 @@ function Home(){
                 </div>
               </div>
 
-            <div className="home_gif">
+
+           <div className="home_gif">
                 <img src="images\comp.gif"/>
             </div>
         
