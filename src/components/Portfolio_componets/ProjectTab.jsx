@@ -15,7 +15,7 @@ const projectList = [
                   manuscript-style images was used to fine-tune the model for high accuracy.
                   `,
     image: "images/Project/Projects/DevaOCR.png",
-    demoLink: "https://huggingface.co/spaces/UdayAgrawal29/handwritten-devanagari-text-recognition",
+    demoLink: "https://huggingface.co/UdayAgrawal29/handwritten-devanagari-text-recognition-updated",
     technologies: ["Python", "TrOCR", "Hugging Face", "PIL", "Deep Learning"],
     features: [
       "Hindi handwritten text recognition",
@@ -34,7 +34,7 @@ const projectList = [
                   content more accessible and interactive for all visitors.`,
 
     image: "images/Project/Projects/VISTA.png", 
-    demoLink: "#",
+    demoLink: "https://github.com/UdayAgrawal29/VisitSmart-VISTA",
     technologies: ["HTMLt", "CSS", "JS", "DJANGO"],
     features: [
       "Multilingual content delivery",
@@ -55,7 +55,7 @@ const projectList = [
                 and beginner investors.`,
 
     image: "images/Project/Projects/TradeInsight.png",
-    demoLink: "#",
+    demoLink: "https://github.com/UdayAgrawal29/Trading-Inidcator",
     technologies: ["JavaScript", "React", "QuickChart.io", "Finnhub API", "WebSocket"],
     features: [
       "Live stock market data",
