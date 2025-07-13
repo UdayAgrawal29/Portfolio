@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 6rem;
+    overflow: hidden;
 }
 
 .home_gif img {
@@ -20,7 +21,8 @@
     display: flex;
     flex-direction: column;
     animation: slide_left 1s forwards;
-
+    padding-left: 1rem;
+    padding-bottom: 1rem;
 }
 
 @keyframes slide_left {

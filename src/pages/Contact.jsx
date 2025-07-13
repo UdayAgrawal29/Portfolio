@@ -45,10 +45,10 @@ const Contact = () => {
             </div>
 
            
-            <div className="connect-box phone">
+            {/* <div className="connect-box phone">
               <FaPhone size={20} color="#00FF88" /> 
               (+91) 7205753779
-            </div>
+            </div> */}
 
            
             <div className="connect-box location">

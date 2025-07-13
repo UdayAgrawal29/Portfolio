@@ -8,21 +8,24 @@ const projectList = [
   {
     title: "DevaOCR",
     description: "AI-powered system for recognizing handwritten Devanagari script.",
-    description1:`
-                  DevaOCR is a deep learning-based system built using Microsoft's TrOCR model 
-                  to recognize handwritten Hindi text. It converts scanned or photographed manuscripts 
-                  into editable digital text. A dataset of 90,000+ Hindi characters and synthetic 
-                  manuscript-style images was used to fine-tune the model for high accuracy.
+    description1: `
+                  DevaOCR is a deep learning-based system built on Microsoft's TrOCR model 
+                  to recognize handwritten Hindi text and convert it into editable digital format. 
+                  Trained on a custom dataset of 90,000+ Hindi characters 
+                  the model achieved an evaluation loss of 0.023 and a character error rate (CER) of just 10%. 
+                  Within 15 days of release, DevaOCR received over 25 downloads on Hugging Face, highlighting its utility 
+                  for digitizing regional language manuscripts.
                   `,
     image: "images/Project/Projects/DevaOCR.png",
     demoLink: "https://huggingface.co/UdayAgrawal29/handwritten-devanagari-text-recognition-updated",
     technologies: ["Python", "TrOCR", "Hugging Face", "PIL", "Deep Learning"],
     features: [
-      "Hindi handwritten text recognition",
-      "Character and word-level predictions",
-      "Custom dataset & synthetic data",
-      "TrOCR fine-tuning for Hindi"
-    ],
+      "Handwritten Hindi text recognition using TrOCR",
+      "Achieved 0.023 eval loss and 10% CER",
+      "Trained on 90,000+ real",
+      "Supports both character-level and word-level outputs",
+      "25+ downloads within 15 days of launch"
+    ]
   },
   {
     title: "VISTA",
@@ -43,27 +46,27 @@ const projectList = [
       "Smart kiosk integration"
     ],
   },
-  {
-    title: "TradeInsight",
-    description: "Web platform providing trading patterns and indicators.",
-    description1: 
+  // {
+  //   title: "TradeInsight",
+  //   description: "Web platform providing trading patterns and indicators.",
+  //   description1: 
 
-                `TradeInsight is a financial insights platform that analyzes stock data 
-                to deliver useful trading patterns and indicators. It helps users make informed 
-                decisions through dynamic chart visualizations, technical signal detection, and 
-                real-time trend identification. The tool is especially useful for retail traders
-                and beginner investors.`,
+  //               `TradeInsight is a financial insights platform that analyzes stock data 
+  //               to deliver useful trading patterns and indicators. It helps users make informed 
+  //               decisions through dynamic chart visualizations, technical signal detection, and 
+  //               real-time trend identification. The tool is especially useful for retail traders
+  //               and beginner investors.`,
 
-    image: "images/Project/Projects/TradeInsight.png",
-    demoLink: "https://github.com/UdayAgrawal29/Trading-Inidcator",
-    technologies: ["JavaScript", "React", "QuickChart.io", "Finnhub API", "WebSocket"],
-    features: [
-      "Live stock market data",
-      "Real-time graph rendering",
-      "Trading patterns & technical indicators",
-      "Clean, responsive UI"
-    ],
-  },
+  //   image: "images/Project/Projects/TradeInsight.png",
+  //   demoLink: "https://github.com/UdayAgrawal29/Trading-Inidcator",
+  //   technologies: ["HTML", "CSS", "JS", "Finnhub API", ],
+  //   features: [
+  //     "Live stock market data",
+  //     "Real-time graph rendering",
+  //     "Trading patterns & technical indicators",
+  //     "Clean, responsive UI"
+  //   ],
+  // },
 ];
 
 

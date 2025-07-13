@@ -3,6 +3,12 @@
     justify-content: space-between;
     margin-top: 5rem;
 }
+.about_me{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50%;
+}
 
 .my_img{
     border-radius: 100%;

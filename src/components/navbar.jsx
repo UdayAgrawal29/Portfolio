@@ -33,7 +33,18 @@ function Navbar() {
 
   return (
     <div className={`navbar_container ${scrolled ? "scrolled" : ""}`}>
-      <button className="tagline"><img src='images/star-removebg-preview.png'/> Ready to Innovate</button>
+      <button
+        className="tagline"
+        onClick={() => {
+          const contactSection = document.getElementById("contact");
+          if (contactSection) {
+            contactSection.scrollIntoView({ behavior: "smooth" });
+          }
+        }}
+      >
+        <img src="images/star-removebg-preview.png" alt="star" /> Open To Work
+      </button>
+
       <div className="nav_links">
         <a
           href="#home"
