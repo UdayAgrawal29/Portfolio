@@ -1,20 +1,49 @@
-.des_cont{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5rem;
-}
-.about_me{
+.des_cont {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
-  width: 50%;
+  margin-top: 4rem;
+  padding: 0 1rem;
 }
 
-.my_img{
-    border-radius: 100%;
+@media (min-width: 768px) {
+  .des_cont {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 4rem;
+  }
+}
+
+.about_me {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .about_me {
+    width: 50%;
+    text-align: left;
+  }
+}
+
+.my_img {
+  border-radius: 100%;
+  height: 15rem;
+  width: 15rem;
+  border: 4px solid gray;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .my_img {
     height: 20rem;
     width: 21rem;
-    border: 5px solid gray;
+  }
 }
 
 .gradient-text {
@@ -22,33 +51,46 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
-.desp_buttons{
-    display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
+
+@media (min-width: 768px) {
+  .gradient-text {
+    font-size: 3rem;
+  }
 }
-.down_btn{
-  padding: 15px 30px;
+
+.desp_buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .desp_buttons {
+    justify-content: flex-start;
+  }
+}
+
+.down_btn,
+.proj_btn {
+  padding: 12px 24px;
   border-radius: 8px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1rem;
   transition: 0.3s;
   box-shadow: 0 0 20px 5px rgba(164, 66, 255, 0.4);
-  background: linear-gradient(90deg, #a446ff, #6a60ff);
   cursor: pointer;
-
 }
 
-.proj_btn{
-    border: 1px solid #444;
-    padding:  5px 30px;
-    border-radius: 8px;
-    color: white;
-    font-weight: 500;
-    font-size: 18px;
-    transition: 0.3s;
-    box-shadow: 0 0 20px 5px rgba(164, 66, 255, 0.4);
-    background-color: rgba(3,0,20,255);
+.down_btn {
+  background: linear-gradient(90deg, #a446ff, #6a60ff);
+  color: white;
+  border: none;
+}
+
+.proj_btn {
+  border: 1px solid #444;
+  color: white;
+  background-color: rgba(3, 0, 20, 255);
 }

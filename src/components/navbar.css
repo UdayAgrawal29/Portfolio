@@ -2,60 +2,83 @@
   position: sticky;
   top: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1rem;
+  padding: 1rem;
   backdrop-filter: blur(0px);
   z-index: 1000;
   border-radius: 10px;
 }
+
 .navbar_container.scrolled {
   backdrop-filter: blur(10px);
 }
-.navbar_container h3{
+
+.navbar_container h3 {
   background: linear-gradient(to right, #a855f7, #6366f1); 
   -webkit-background-clip: text; 
   color: transparent;            
 }
-.nav_links{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 20rem;
-    
+
+.nav_links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 0.5rem;
 }
-.nav_links a{
-    font-size: 1.3rem;
-    color: white;
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
+
+.nav_links a {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
   transition: border-color 0.3s ease;
 }
 
 .nav_links a.active {
-  border-bottom: 5px solid #7f5af0; /* or your brand color */
+  border-bottom: 3px solid #7f5af0;
   border-radius: 3px;
-   color: white
+  color: white;
 }
+
 .tagline {
   display: flex;
-  align-items: center; /* vertically center image and text */
-  gap: 2px; /* space between image and text */
-
+  align-items: center;
+  gap: 6px;
   background: linear-gradient(to right, #7f5af0, #6246ea);
-  padding: 8px 16px;
-  margin-top: 0.5rem;
+  padding: 6px 12px;
   border-radius: 999px;
   font-weight: 600;
   font-size: 0.875rem;
   color: white;
   border: none;
-  width: fit-content;
   box-shadow: 0 0 10px rgba(127, 90, 240, 0.5);
   cursor: pointer;
+  width: fit-content;
 }
 
 .tagline img {
-  height: 1.8rem; /* match text size or adjust as needed */
+  height: 1.5rem;
   vertical-align: middle;
 }
+
+/* Responsive Tweaks */
+@media (min-width: 768px) {
+  .nav_links {
+    width: auto;
+    margin-top: 0;
+  }
+
+  .nav_links a {
+    font-size: 1.2rem;
+  }
+
+  .navbar_container {
+    flex-wrap: nowrap;
+  }
+}
+

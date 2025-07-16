@@ -1,123 +1,143 @@
-.home_cont{
-    display: flex;
+.home_cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .home_cont {
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 6rem;
-    overflow: hidden;
+  }
 }
 
 .home_gif img {
+  padding-top: 2rem;
+  height: 15rem;
+  width: 15rem;
+  max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .home_gif img {
     padding-top: 4rem;
     padding-right: 3rem;
     height: 25rem;
     width: 25rem;
+  }
 }
-.home_gif {
-   
-    animation: slide_right 1s forwards;
 
+.home_gif {
+  animation: slide_right 1s forwards;
 }
-.home_left{
-    display: flex;
-    flex-direction: column;
-    animation: slide_left 1s forwards;
+
+.home_left {
+  display: flex;
+  flex-direction: column;
+  animation: slide_left 1s forwards;
+  padding: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .home_left {
+    text-align: left;
     padding-left: 1rem;
     padding-bottom: 1rem;
-}
-
-@keyframes slide_left {
-  0% {
-    transform: translateX(-100%); /* Start from left off-screen */
-    opacity: 0; /* Initially invisible */
   }
-  100% {
-    transform: translateX(0); /* End in the normal position */
-    opacity: 1; /* Fade in */
-  }
-}
-
-
-@keyframes slide_right {
-  0% {
-    transform: translateX(200%); /* Start from right off-screen */
-    opacity: 0; /* Initially invisible */
-  }
-  100% {
-    transform: translateX(0); /* End in the normal position */
-    opacity: 1; /* Fade in */
-  }
-}
-.tagline {
-  background: linear-gradient(to right, #7f5af0, #6246ea);
-  padding: 8px 16px;
-  border-radius: 999px;
-  font-weight: 600;
-  font-size: 0.875rem;
-  color: white;
-  border: none;
-  width: fit-content;
-  box-shadow: 0 0 10px rgba(127, 90, 240, 0.5);
-}
-
-.home_left_button {
-  display: flex;
-  gap: 1rem;
-  
 }
 
 .white-text {
   color: white;
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 
 .gradient {
-  font-size: 4rem;
+  font-size: 2.5rem;
   background: linear-gradient(90deg, #a446ff, #6a60ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
-
 }
 
+@media (min-width: 768px) {
+  .white-text,
+  .gradient {
+    font-size: 4rem;
+  }
+}
 
-.home_left_button button{
+.home_left_button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .home_left_button {
+    justify-content: start;
+  }
+  .social-buttons{
+    justify-content: center;
+  }
+}
+
+.home_left_button button {
   cursor: pointer;
   border: 1px solid #444;
-  padding: 15px 30px;
+  padding: 12px 24px;
   border-radius: 8px;
   color: white;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1rem;
   transition: 0.3s;
   box-shadow: 0 0 20px 5px rgba(164, 66, 255, 0.4);
-  background-color: rgba(3,0,20,255);
+  background-color: rgba(3, 0, 20, 255);
 }
 
-.home_left_button button:hover{
-   box-shadow: 0 0 25px 10px rgba(164, 66, 255, 0.6);
+.home_left_button button:hover {
+  box-shadow: 0 0 25px 10px rgba(164, 66, 255, 0.6);
 }
-
 .social-buttons {
   display: flex;
-}
-.social-buttons button {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  justify-content: center;    /* Default for small screens */
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
   margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .social-buttons {
+    justify-content: flex-start;   /* Left-align on larger screens */
+  }
+}
+
+
+
+.social-buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 1rem; 
+  border-radius: 1rem;
   color: white;
-  font-size: 25px;
-  padding: 15px 20px;
-  border: 1px solid #444; 
+  font-size: 1.5rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid #444;
   cursor: pointer;
   box-shadow: 0 0 20px 5px rgba(164, 66, 255, 0.4);
+  transition: 0.3s ease;
 }
 
 .social-buttons button:hover {
-   box-shadow: 0 0 25px 10px rgba(164, 66, 255, 0.6);
+  box-shadow: 0 0 25px 10px rgba(164, 66, 255, 0.6);
 }
 
 .social-buttons i {
-  pointer-events: none; 
+  pointer-events: none;
+  font-size: 1.5rem;
 }
